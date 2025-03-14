@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send({
     text:
       "<think>Bot thinking part</think>" +
